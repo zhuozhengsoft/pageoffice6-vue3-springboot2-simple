@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.test</groupId>
+  <artifactId>demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>demo</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.4.RELEASE</version>
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>springloaded</artifactId>
+          <version>1.2.6.RELEASE</version>
+      </dependency>
+	   
+      <!-- tomcat 的支持.-->  
+      <dependency>  
+          <groupId>org.springframework.boot</groupId>  
+          <artifactId>spring-boot-starter-tomcat</artifactId>  
+          <scope>provided</scope>  
+      </dependency>
+      <dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-devtools</artifactId>
+	    <optional>true</optional>
+           <scope>true</scope>
+	  </dependency>
+	   
+	   <!-- 添加Sqlite依赖（可选：如果不需要使用印章功能的话，不需要添加此依赖 ）-->
+	   <dependency>
+		    <groupId>org.xerial</groupId>
+		    <artifactId>sqlite-jdbc</artifactId>
+		    <version>3.32.3.2</version>
+		</dependency>
+      <!-- 添加PageOffice依赖（必须） -->
+      <dependency>
+          <groupId>com.zhuozhengsoft</groupId>
+          <artifactId>pageoffice</artifactId>
+          <version>6.0.0.6-javax</version>
+      </dependency>
+  </dependencies>
+<build>
+  <plugins>
+  	<plugin>
+  		<groupId>org.springframework.boot</groupId>
+ 		<artifactId>spring-boot-maven-plugin</artifactId>
+  	</plugin>
+  </plugins>
+ </build>
+</project>
