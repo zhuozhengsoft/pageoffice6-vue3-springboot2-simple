@@ -1,8 +1,8 @@
-# simple-vue3-springboot2-pageoffice6
+# pageoffice6-vue3-springboot2-simple
 
 ### 一、简介
 
-​       simple-vue3-springboot2-pageoffice6项目演示了在前端Vue框架和后端Springboot框架的结合下如何使用PageOffice V6.0产品，此项目是一个最简单的demo项目。
+​       pageoffice6-vue3-springboot2-simple项目演示了在前端Vue框架和后端Springboot框架的结合下如何使用PageOffice V6.0产品，此项目是一个最简单的demo项目。
 
 ### 二、项目环境要求
 
