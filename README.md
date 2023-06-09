@@ -15,14 +15,12 @@
 
 ### 四、项目运行步骤
 
-解压当前项目压缩包。
-
 - #### 后端Springboot项目（springboot-back）
 
 1. 打开application.properties文件，将posyspath变量的值配置成您上一步新建的PageOffice系统文件夹  （例如：D:/pageoffice）。
 2. 运行项目：点击运行按钮即可。
 
-> 注意：如果后端Springboot项目的8081端口已经被占用，后端项目更换其他端口后，请记得将前端Vue项目samples6-vue-front/vue.config.js文件中proxy对象中的 target指向的地址改成更改后的后端项目的端口，并且将前端Vue项目的index.html中对pageoffice.js引用时的后端项目的端口也改成更改后的端口。
+> 注意：如果后端Springboot项目的8081端口已经被占用，后端项目更换其他端口后，请记得将前端Vue项目vue-front/vite.config.js文件中proxy对象中的 target指向的地址改成更改后的后端项目的端口，并且将前端Vue项目的index.html中对pageoffice.js引用时的后端项目的端口也改成更改后的端口。
 
 - #### 前端Vue项目（vue-front）
 
